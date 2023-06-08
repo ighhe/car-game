@@ -1,0 +1,190 @@
+body {
+    background-color: #7216e3;
+}
+
+.game {
+    width: 300px;
+    height: 600px;
+    margin: 50px auto;
+    background-image: url(road.png);
+    background-size: 300px 600px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.start {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #36bdf3 #000 #1706d7;
+    border-radius: 6px;
+    background: linear-gradient(#350ff3, #5e16e3) #7216e3;
+    transition: 0.2s;
+  } 
+.start:hover { background: linear-gradient(#2d00f5, #2d00f5) #4500f5; }
+.start:active { background: linear-gradient(#3100f5, #4e00f5) #5600f5; }
+
+
+#btn {
+    margin: 200px 100px;
+    position: absolute;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#car {
+    width: 50px;
+    height: 100px;
+    margin: 10px 25px;
+    background-image: url(main_car2.png);
+    background-size: 50px 100px;
+    position: relative;
+    top: 480px;
+    left: 100px;
+}
+
+.car_left {
+    animation: car_l 0.5s;
+    animation-fill-mode: forwards;
+}    
+
+@keyframes car_l {
+        0% {
+            left: 100px;
+        }
+        100% {
+            left: 0px;
+        }
+
+    }
+
+.car_right {
+    animation: car_r 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes car_r {
+    0% {
+        left: 100px;
+    }
+    100% {
+        left: 200px;
+    }
+
+}
+
+.car_right2 {
+    animation: car_r2 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes car_r2 {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 100px;
+    }
+
+}
+
+.car_left2 {
+    animation: car_l2 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes car_l2 {
+    0% {
+        left: 200px;
+    }
+    100% {
+        left: 100px;
+    }
+
+}
+
+#vst {
+    width: 100px;
+    height: 120px;
+    float: left;
+    background-image: url(main_car3.png);
+    background-size: 100px 120px;
+    position: relative;
+    top: -200px;
+    left: 0px;
+}
+
+.movement {
+    animation: car_m 6s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes car_m {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: 600px;
+    }
+
+}
+
+#vst2 {
+    width: 100px;
+    height: 120px;
+    float: left;
+    background-image: url(main_car3.png);
+    background-size: 100px 120px;
+    position: relative;
+    top: -200px;
+    left: 0px;
+}
+
+.movement2 {
+    animation:  car_m 5s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes car_m {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: 600px;
+    }
+
+}
+
+#vst3 {
+    width: 100px;
+    height: 120px;
+    float: left;
+    background-image: url(main_car3.png);
+    background-size: 100px 120px;
+    position: relative;
+    top: -200px;
+    left: 0px;
+}
+
+.movement3 {
+    animation: car_m 4s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes car_m {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: 600px;
+    }
+
+}
